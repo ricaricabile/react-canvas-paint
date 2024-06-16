@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .mainwindow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    align-items: center;
+    width: 165px;
+    height: 200px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+  }
+  .itemTotal {
+    background-color: gray;
+    color: white;
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: 29px;
+    width: 30px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  .input{
+    margin-left: 5px;
+    margin-top: 10px;
+    flex-shrink: 0;
+    width: 145px;
+    height: 30px;
+  }
+  .item {
+    background-color: gray;
+    color: white;
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .row2 {
+    padding-top: 5px;
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+  }
+  .row2d{
+    margin-left: 10px;
+  }
+  
+  .row3 {
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+    }
+    .row3d{
+        margin-left: 10px;
+    }
+  
+  
+    .row4 {
+        width: 110px;
+        display: flex;
+        justify-content: space-between;
+        }
+        .row4d{
+            margin-left: 10px;
+        }
+        .row5 {
+            width: 110px;
+            display: flex;
+            justify-content: space-between;
+            }
+            .row5d{
+                margin-left: 10px;
+            }
+    
