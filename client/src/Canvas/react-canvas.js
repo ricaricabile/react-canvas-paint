@@ -22,21 +22,25 @@ const ReactCanvas = props => {
         percent = 70 / 100;
         canvas.height = window.screen.availHeight * percent;
         const context = canvas.getContext('2d');
-        context.lineWidth = 2.124;
-        context.beginPath();
-        context.strokeStyle = 'black';
-        context.moveTo(0, 0);
-        context.lineTo(canvas.width, 0);
-        context.stroke();
-        context.moveTo(0, 0);
-        context.lineTo(0, canvas.height);
-        context.stroke();
-        context.moveTo(canvas.width, 0);
-        context.lineTo(canvas.width, canvas.height);
-        context.stroke();
-        context.moveTo(canvas.width, canvas.height);
-        context.lineTo(0, canvas.height);
-        context.stroke();
+        const drawCanvas = () => {
+            context.lineWidth = 2.124;
+            context.beginPath();
+            context.strokeStyle = 'black';
+            context.moveTo(0, 0);
+            context.lineTo(canvas.width, 0);
+            context.stroke();
+            context.moveTo(0, 0);
+            context.lineTo(0, canvas.height);
+            context.stroke();
+            context.moveTo(canvas.width, 0);
+            context.lineTo(canvas.width, canvas.height);
+            context.stroke();
+            context.moveTo(canvas.width, canvas.height);
+            context.lineTo(0, canvas.height);
+            context.stroke();
+        }
+        drawCanvas();
+        
         percent = 75 / 100;
         navig.width = window.screen.availWidth * percent;
         percent = 70 / 100;
@@ -164,21 +168,7 @@ const ReactCanvas = props => {
     }
     document.getElementById('clear').onclick = function(){
         context.clearRect(0, 0, canvas.width, canvas.height);
-        context.lineWidth = 2.124;
-        context.beginPath();
-        context.strokeStyle = 'black';
-        context.moveTo(0, 0);
-        context.lineTo(canvas.width, 0);
-        context.stroke();
-        context.moveTo(0, 0);
-        context.lineTo(0, canvas.height);
-        context.stroke();
-        context.moveTo(canvas.width, 0);
-        context.lineTo(canvas.width, canvas.height);
-        context.stroke();
-        context.moveTo(canvas.width, canvas.height);
-        context.lineTo(0, canvas.height);
-        context.stroke();
+        drawCanvas();
     }
     }, [])
     
