@@ -42,7 +42,7 @@ class App extends React.Component {
           </div>
           <div className="itemsdown" style={{ height: window.screen.availHeight * (30/100) ,display: 'flex',  alignContent:'center', alignItems:'flex-start'}}>
           <Button id="clear" c={'gray'} variant="outline" style={{border:'solid 1px white'}}> Clear Screen</Button>
-          <Container w="50%" mt={'xl'} p={0} style={{display: 'flex', justifyContent:'flex-end', gap: '5px'}}>
+          <Container w="28%" mt={'xl'} p={0} style={{display: 'flex', justifyContent:'flex-end'}}>
             <div style={{border: 'dashed 1px gray', height: '36px'}}>
             <Pencil
               id="pen"
